@@ -180,7 +180,7 @@ DOTSPACEVIM
 }
 
 set_dot_spacevim(){
-    if [ $TEMPLATE ];then
+    if [ "$TEMPLATE" ];then
         curl -fLo "$dot_spacevim" --create-dirs "$TEMPLATE"
     else
         generate_dot_spacevim
